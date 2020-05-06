@@ -10,9 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet
+    var mealNameTextField : UITextField!
+    @IBOutlet
+    var happinessTextField: UITextField!
+    
+    @IBAction
+    func addMeal() {
+        let mealName : String? = mealNameTextField.text
+        let happiness : String? = happinessTextField.text
+        print("add meal: \(mealName), happiness: \(happiness)")
     }
 
 
