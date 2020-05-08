@@ -11,30 +11,27 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet
-    var mealNameTextField : UITextField!
+    var nomeTextField : UITextField?
     @IBOutlet
-    var happinessTextField: UITextField!
+    var felicidadeTextField: UITextField?
     
     @IBAction
     func addMeal() {
-        let mealName : String? = mealNameTextField.text
-        let happiness : String? = happinessTextField.text
-        
-        if mealName == nil || happiness == nil || Int(happiness!) == nil {
-            print("Meal or Happines is invalid")
+        guard let nome : String = nomeTextField?.text else {
             return
         }
         
-        let r1 = Refeicao(nome: mealName!, felicidade: Int(happiness!)!,itens: [
-            Item(nome: "i1", calorias: 2),
-            Item(nome: "i2", calorias: 3),
-        ])
+        guard let felicidadeString : String = felicidadeTextField?.text,
+            let felicidade : Int = Int(felicidadeString) else {
+            return
+        }
         
-        let total : Double = r1.total()
+        let r1 = Refeicao(nome: nome, felicidade: felicidade)
         
         print(r1.nome)
-        print(total)
-        //print("add meal: \(mealName), happiness: \(happiness)")
+        print(r1.felicidade)
+        
+        
     }
 
 
