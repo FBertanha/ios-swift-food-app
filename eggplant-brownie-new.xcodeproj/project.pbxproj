@@ -13,6 +13,8 @@
 		B01975532462493F00A4828F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01975512462493F00A4828F /* Main.storyboard */; };
 		B01975552462494200A4828F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01975542462494200A4828F /* Assets.xcassets */; };
 		B01975582462494200A4828F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01975562462494200A4828F /* LaunchScreen.storyboard */; };
+		B03235152464F441003095A1 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03235142464F441003095A1 /* Refeicao.swift */; };
+		B03235182464F533003095A1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03235172464F533003095A1 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B01975542462494200A4828F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B01975572462494200A4828F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B01975592462494200A4828F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B03235142464F441003095A1 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		B03235172464F533003095A1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		B019754A2462493F00A4828F /* eggplant-brownie-new */ = {
 			isa = PBXGroup;
 			children = (
+				B032351A2464F629003095A1 /* Controllers */,
+				B03235192464F61E003095A1 /* Views */,
+				B03235162464F4C2003095A1 /* Models */,
 				B019754B2462493F00A4828F /* AppDelegate.swift */,
 				B019754D2462493F00A4828F /* SceneDelegate.swift */,
-				B019754F2462493F00A4828F /* ViewController.swift */,
-				B01975512462493F00A4828F /* Main.storyboard */,
 				B01975542462494200A4828F /* Assets.xcassets */,
 				B01975562462494200A4828F /* LaunchScreen.storyboard */,
 				B01975592462494200A4828F /* Info.plist */,
 			);
 			path = "eggplant-brownie-new";
+			sourceTree = "<group>";
+		};
+		B03235162464F4C2003095A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B03235142464F441003095A1 /* Refeicao.swift */,
+				B03235172464F533003095A1 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B03235192464F61E003095A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B01975512462493F00A4828F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B032351A2464F629003095A1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B019754F2462493F00A4828F /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03235182464F533003095A1 /* Item.swift in Sources */,
 				B01975502462493F00A4828F /* ViewController.swift in Sources */,
 				B019754C2462493F00A4828F /* AppDelegate.swift in Sources */,
 				B019754E2462493F00A4828F /* SceneDelegate.swift in Sources */,
+				B03235152464F441003095A1 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
