@@ -15,6 +15,7 @@
 		B01975582462494200A4828F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01975562462494200A4828F /* LaunchScreen.storyboard */; };
 		B03235152464F441003095A1 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03235142464F441003095A1 /* Refeicao.swift */; };
 		B03235182464F533003095A1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03235172464F533003095A1 /* Item.swift */; };
+		B0D5F67B246E3ECE00EF589B /* RefeicoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D5F67A246E3ECE00EF589B /* RefeicoesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B01975592462494200A4828F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B03235142464F441003095A1 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
 		B03235172464F533003095A1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B0D5F67A246E3ECE00EF589B /* RefeicoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefeicoesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B019754F2462493F00A4828F /* ViewController.swift */,
+				B0D5F67A246E3ECE00EF589B /* RefeicoesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				B03235182464F533003095A1 /* Item.swift in Sources */,
 				B01975502462493F00A4828F /* ViewController.swift in Sources */,
 				B019754C2462493F00A4828F /* AppDelegate.swift in Sources */,
+				B0D5F67B246E3ECE00EF589B /* RefeicoesTableViewController.swift in Sources */,
 				B019754E2462493F00A4828F /* SceneDelegate.swift in Sources */,
 				B03235152464F441003095A1 /* Refeicao.swift in Sources */,
 			);
