@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RefeicoesTableViewController : UITableViewController {
+class RefeicoesTableViewController : UITableViewController, AdicionaRefeicaoDelegate {
     
     var refeicoes = [
         Refeicao(nome: "Macarrão", felicidade: 4),
@@ -30,7 +30,7 @@ class RefeicoesTableViewController : UITableViewController {
             return
         }
         
-        viewController.refeicoesTableViewController = self
+        viewController.delegate = self
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
