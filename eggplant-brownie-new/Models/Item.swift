@@ -8,7 +8,11 @@
 
 import UIKit
 
-class Item {
+class Item : Equatable {
+    static func == (lhs: Item, rhs: Item) -> Bool {
+        return lhs.nome == rhs.nome
+    }
+    
     let nome : String
     let calorias : Double
     
