@@ -119,6 +119,7 @@
                     <connections>
                         <outlet property="felicidadeTextField" destination="arm-RR-Eht" id="ksf-zQ-SJQ"/>
                         <outlet property="nomeTextField" destination="8Xr-r9-FMJ" id="Zf7-HP-E8y"/>
+                        <outlet property="tableView" destination="BCv-Lz-STw" id="3iQ-hD-Pgj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

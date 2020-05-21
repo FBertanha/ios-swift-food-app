@@ -12,9 +12,12 @@ protocol AdicionaRefeicaoDelegate {
     func add(_ refeicao : Refeicao)
 }
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, AdicionarItemDelegate {
     
     //MARK: - Atributos
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     var delegate : AdicionaRefeicaoDelegate?
     var itens : Array<Item> = [
         Item(nome: "Queijo ralado", calorias: 5),
@@ -24,6 +27,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         Item(nome: "Batata palha", calorias: 99)
     ]
     var itensSelecionados : Array<Item> = []
+    
+    //MARK: - View lifecycles
+    override func viewDidLoad() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "add", style: .plain, target: self, action: #selector(abrirAdicionarItem))
+    }
+    
+    @objc func abrirAdicionarItem() {
+           print("aqui")
+        let adicionarItemViewController: AdicionarItemViewController = AdicionarItemViewController(delegate: self)
+        navigationController?.pushViewController(adicionarItemViewController, animated: true)
+    }
+    //MARK: - AdicionarItemViewControllerDelegate
+    
+    func adicionarItem(item: Item) {
+        itens.append(item)
+        tableView.reloadData()
+    }
     
     // MARK: - IBOutlets
     @IBOutlet
